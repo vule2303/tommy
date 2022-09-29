@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="VI">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div>
+      <h1>Bài tập lab 1</h1>
+    </div>
+    <div class="logo">
+      <img
+        src="https://yt3.ggpht.com/ytc/AMLnZu9qep0bhKf-cS_HLEtShmBOAnd-j5WmfQhRDgcv8A=s900-c-k-c0x00ffffff-no-rj"
+        alt=""
+      />
+    </div>
+    <div class="IFMS">
+      <div class="information">Họ tên: Lê Đức Tuấn Vũ</div>
+      <div class="information_2">MSSV: 12104056</div>
+    </div>
+
+    <div class="c1">
+      <div class="question">
+        Câu 1: Trình bày sự khác nhau giữa Inline, Inline-block và block của
+        display. Ví dụ minh họa
+      </div>
+      <div class="content_area">
+        <div class="content_answer">
+          <p>
+            Inline : các item có kiểu <strong>display: block</strong> sẽ<strong>
+              không thể set width và height</strong
+            >
+            chỉ có thể điều chỉnh margin và padding
+            <strong>left and right</strong>
+          </p>
+          <p>
+            Block : Các item có kiểu <strong>display: block</strong> sẽ
+            <strong>set được width, height, margin, padding</strong> đầy đủ 4
+            hướng (top, bottom, right, left) và luôn được xuống dòng và chiếm
+            toàn bộ width nếu <strong>width</strong> không được set
+          </p>
+          <p>
+            Inline-Block : kiểu <strong>display: inline-block</strong> sẽ được
+            sắp xếp giống với kiểu <strong>display: inline</strong>, nghĩa là
+            các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items
+            sẽ có thuộc tính của <strong>display: block</strong> như là
+            <strong>có set width, height, margin, padding đủ 4 hướng</strong>.
+          </p>
+          <div class="content_example">
+            <p>Ví dụ minh họa:</p>
+            <div class="inline">
+              <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+span.a {
+  display: inline; 
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;VÍ DỤ MINH HỌA&lt;/h1&gt;
+
+&lt;h2&gt;display: inline&lt;/h2&gt;
+&lt;div&gt; 
+    đây là ví dụ&lt;span class=&quot;a&quot;&gt;display:&lt;/span&gt; &lt;span class=&quot;a&quot;&gt;inline&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;h2&gt;display: inline-block&lt;/h2&gt;
+&lt;div&gt;
+    đây là ví dụ&lt;span class=&quot;b&quot;&gt;display:&lt;/span&gt; &lt;span class=&quot;b&quot;&gt;inline-block&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;h2&gt;display: block&lt;/h2&gt;
+&lt;div&gt; 
+    đây là ví dụ&lt;span class=&quot;c&quot;&gt;display:&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;block&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            
+            
+            </code>
+          </pre>
+            </div>
+            <figure class="Inline_example">
+              <img
+                src="https://i.imgur.com/sKYS1p1.png"
+                alt="Ảnh ví dụ"
+                style="border-radius: 1px; border: 2px solid black"
+              />
+              <figcaption style="color: #094985; text-align: center;"> Kết quả chạy chương trình</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c2">
+      <span class="question">
+        Câu 2: Trình bày sự khác nhau giữa các thuộc tính position(relative,
+        absolute, fixed, sticky).Ví dụ minh họa
+      </span>
+      <div class="content_area_2">
+        <div class="content_answer">
+          <div class="content_sticky">
+            <p>
+            Position sticky: Phần tử được định vị bằng Position sticky sẽ thay đổi vị trí dựa trên thao tác cuộn của người dùng. Với Position sticky, phần tử sẽ linh động <strong>chuyển từ trạng thái relative sang fixed và ngược lại</strong>
+            </p>
+            <p>Ví dụ code:</p>
+            <pre class="sticky">
+                  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Thử &lt;b&gt;cuộn&lt;/b&gt; xuống!&lt;/p&gt;
+
+
+&lt;div class=&quot;sticky&quot;&gt;Đây là sticky!&lt;/div&gt;
+
+&lt;div style=&quot;padding-bottom:2000px&quot;&gt;
+
+  &lt;p&gt;....&lt;/p&gt;
+  &lt;p&gt;....&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                  
+                  </code>
+                </pre>
+            <figure class="sticky_example">
+              <img
+                src="https://wiki.tino.org/wp-content/uploads/2021/07/word-image-1478-1024x426.png"
+                alt="Ảnh ví dụ"
+                style="width: 616px; height: 256px; margin-left:50px"
+              />
+              
+              <figcaption style="color: #094985;">
+                <i>Kết quả chạy chương trình</i>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="content_relative">
+            <p>
+              Position relative: Phần tử được định vị bằng Position relative sẽ
+              nằm ở vị trí tương đối so với vị trí static. Bạn có thể sử dụng
+              các CSS như: <strong> Top, Bottom, Left, Right</strong> để định vị
+              vị trí của phần tử đó.
+            </p>
+            <p>Ví dụ code:</p>
+            <pre class="relative">
+                    <code>
+&lt;h3&gt;{position: relative;}&lt;/h3&gt;
+&lt;div style=”position: relative; width:250px;”&gt;                       
+position: relative; width:250px;                       
+&lt;/div&gt;                        
+&lt;br&gt;                      
+&lt;h3&gt;{position: relative; left:50px; top:50px;}&lt;/h3&gt;                       
+&lt;div style=”position: relative; left:50px; top:50px; width:250px;”&gt;                       
+position: relative; width:250px; &lt;br/&gt;                       
+left:50px; top:50px;                       
+&lt;/div&gt;
+                    </code>
+                  </pre>
+                 
+            <figure class="relative_example">
+              <img
+                src="https://wiki.tino.org/wp-content/uploads/2021/07/word-image-1472.png"
+                alt="Ảnh ví dụ inline"
+                style="width: 400px; height: 150px; "
+              />
+              <figcaption style="color: #094985; text-align: center">
+                <i>Kết quả chạy chương trình</i>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="content_fixed">
+            <p>
+              Position fixed: Phần tử được <strong>định vị bằng Position fixed</strong> sẽ có vị
+              trí tương đối so với Viewport trên trình duyệt của bạn.
+            </p>
+            <p>Ví dụ code:</p>
+            <pre class="fixed">
+                  <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;                  
+&lt;head&gt;                  
+&lt;meta charset=”utf-8″/&gt;                  
+&lt;title&gt;CSS Position&lt;/title&gt;                 
+&lt;style&gt;
+div {                 
+background-color:yellow;                 
+padding: 5px;                 
+}
+&lt;/style&gt;                  
+&lt;/head&gt;                  
+&lt;body&gt;                 
+&lt;h2&gt;{position: fixed}&lt;/h2&gt;               
+&lt;div style=”position:fixed; bottom:20px; right:15px;”&gt;               
+position:fixed; bottom:20px; right:15px;                 
+&lt;/div&gt;                  
+&lt;p&gt;Content .. 1&lt;/p&gt;                  
+&lt;p&gt;Content .. 2&lt;/p&gt;                  
+&lt;p&gt;Content .. 3&lt;/p&gt;                  
+&lt;p&gt;Content .. 4&lt;/p&gt;                 
+&lt;p&gt;Content .. 5&lt;/p&gt;                
+&lt;/body&gt;                 
+&lt;/html&gt;
+                  </code>
+                </pre>
+            <figure class="relative_example">
+              <img
+                src="https://wiki.tino.org/wp-content/uploads/2021/07/word-image-1475.png"
+                alt="Ảnh ví dụ inline"
+                style="width: 360px; height: 190px"
+              />
+              <figcaption style="color: #094985; text-align: center">
+                <i>Kết quả chạy chương trình</i>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="Content_absolute">
+            <p>
+              Position absolute: Đối với một phần tử được định vị bằng Position
+              absolute, phần tử sẽ tự động ưu tiên cho phần tử cha, ông gần nhất
+              của chúng có chứa Position relative. Khi tìm thấy phần tử chứa
+              Position relative, phần tử được định vị bằng Position absolute sẽ
+              tự động tạo vị trí tương đối so với phần tử đó. Nếu không, phần tử
+              định vị bằng Position absolute sẽ lấy vị trí tương đối so với
+              Viewport trên trình duyệt của bạn
+            </p>
+            <figure
+              class="img_absolute"
+              style=""
+            >
+              <img
+                src="https://wiki.tino.org/wp-content/uploads/2021/07/word-image-1476.png"
+                alt="Kết quả chạy chương trình"
+              />
+              <figcaption style="color: #094985;">
+                <i>Thuộc tính absolute</i>
+              </figcaption>
+            </figure>
+            <div class="absolute" >
+              <p>Ví dụ code:</p>
+              <pre
+                class="code_absolute"
+                style=" 
+                  font-size: 12px;
+                "
+              >
+                      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;                     
+&lt;head&gt;                     
+&lt;meta charset=”utf-8″/&gt;                     
+&lt;title&gt;CSS Position&lt;/title&gt;                      
+&lt;/head&gt;                     
+&lt;body&gt;                     
+&lt;h2 class=”mb-3″&gt;CSS {position:absolute}&lt;/h2&gt;                     
+&lt;div style=”position:relative; height:200px;border:1px solid red;”&gt;                     
+Tui là dòng div {position:relative} (Đỏ).                     
+&lt;div style=”border:1px solid green;”&gt;                     
+Tui là dòng div thông thường (Xanh lá).                     
+&lt;div style=”position: absolute; bottom:10px; right:15px; background:yellow;”&gt;                      
+position: absolute; bottom:10px; right:15px;                     
+&lt;/div&gt;                     
+&lt;/div&gt;                      
+&lt;/div&gt;                     
+&lt;/body&gt;                     
+&lt;/html&gt;
+                      </code>
+                    </pre>
+              <figure
+                class="img_absolute_2"
+                style=""
+              >
+                <img
+                  src="https://wiki.tino.org/wp-content/uploads/2021/07/word-image-1477.png"
+                  alt="Kết quả chạy chương trình"
+                  style="width: 400px; height: 270px"
+                />
+                <figcaption style="color: #094985;">
+                  <i>Kết quả chạy chương trình</i>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

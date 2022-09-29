@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h1 {
+  position: static;
+  text-align: center;
+  color: #094985;
+}
+.logo {
+  margin: 0 120px;
+  width: 188px;
+  height: 188px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  left: 157px;
+  top: 96px;
+  background-color: rgb(255, 255, 255);
+}
+.logo img {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+}
+.IFMS {
+  width: 654px;
+  height: 94px;
+  position: absolute;
+  border: 2px solid #094985;
+  border-radius: 20px;
+  left: 514px;
+  top: 152px;
+}
+.information {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.information_2 {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.question {
+  display: block;
+  margin: 50px 74px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #094985;
+  text-align: left;
+  padding: 20px;
+}
+.content_area {
+  color: black;
+  border: 2px solid #094985;
+  border-radius: 20px;
+  margin: 32px 74px 0;
+}
+.content_area_2 {
+  color: black;
+  border: 2px solid #094985;
+  border-radius: 20px;
+  margin: 32px 74px 0;
+}
+.content_answer {
+  /* line-height: 1.25; */
+  text-align: left;
+  padding: 20px;
+}
+strong {
+  color: red;
+}
+
+.inline pre code {
+  float: left;
+  font-size: 12px;
+}
+
+.Inline_example img {
+  margin-left: 50px;
+  margin-top: -30px;
+  
+}
+figure {
+  display: table;
+  text-align: center;
+  
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  margin-top: 10px;
+
+}
+
+.sticky code {
+  font-size: 12px;
+  float: left;
+}
+.content_relative {
+  clear: left;
+}
+
+.relative code {
+  font-size: 12px;
+  float: left;
+
+}
+.fixed {
+  font-size: 12px;
+  clear: left;
+}
+.content_fixed code {
+  float:left;
+}
+.Content_absolute {
+  clear: left;
+}
+.img_absolute {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.absolute code{
+  font-size: 12px;
+  float: left;
+}
+
+/* .absolute {
+  position: absolute;
+  font: 12px;
+  left: -170px;
+  top: 500px;
+} */
+/* selector {
+    property: value;
+  }
+*/
