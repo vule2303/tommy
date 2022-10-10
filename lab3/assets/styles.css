@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: auto;
+    height: auto;
+    background-color: #F5F5F5;  
+}
+
+  .background {
+    width: 100%;
+    height: 208px;
+    background-color: #9D0C0C;
+  }
+  
+  .background h2 {
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 32px;
+    line-height: 0.1em;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .background h2 span { 
+    background: #9D0C0C;
+    padding:0 10px; 
+  }
+  .background p {
+    color: white;
+    padding-top:30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+  
+  }
+  /* LIST_TITLE */
+  .list_title figure {
+    padding:30px ;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+  }
+  .list_title figure figcaption {
+    margin-top: 20px;
+    color: #9D0C0C;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+  .list_title figure p {
+    margin-top: 20px;
+    text-align: left;
+   
+  }
+  .list_title {
+    position: relative;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* CONTENT */
+  nav .content {
+    margin-top: 20px;
+  }
+  nav .content h2 {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #9D0C0C;
+    border-bottom: 1px solid #9D0C0C;
+    line-height: 0.1em;
+  }
+  nav .content h2 span {
+    padding: 10px ;
+    background-color: #F5F5F5;  
+  }
