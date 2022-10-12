@@ -39,22 +39,60 @@
     </div>
   </nav>
   <!-- FOOTER -->
-  <div class="list_footer">
-    <figure>
-      <img src="assets/img/phone.svg" alt="">
-      <figcaption>Responsive Layout</figcaption>
-      <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
-    </figure>
-    <figure>
-      <img src="assets/img/display.svg" alt="">
-      <figcaption>Responsive Layout</figcaption>
-      <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
-    </figure>
-    <figure>
-      <img src="assets/img/phone.svg" alt="">
-      <figcaption>Easy to use</figcaption>
-      <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
-    </figure>
-  </div>
+  <footer class="list_footer">
+    <div class="content_president">
+      <figure>
+        <img src="assets/img/donaltrump.svg " alt="">
+        <figcaption>Responsive Layout</figcaption>
+        <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
+      </figure>
+      <figure>
+        <img src="assets/img/joe_Biden.svg" alt="">
+        <figcaption>Responsive Layout</figcaption>
+        <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
+      </figure>
+      <figure>
+        <img src="assets/img/bill_Gate.svg" alt="">
+        <figcaption>Easy to use</figcaption>
+        <p>Consectetur adipiscing elit. Nulla sit amet suscipit est. Nulla iaculis ipsum sit amet leo euismod maximus.</p>
+      </figure>
+    </div>
+    <div class="title_QA">
+      <h2><span>Q&A</span></h2>
+    </div>
+    <!-- QUESTION -->
+    <div class="question">
+      <button class="accordion">Question 1: Who are you?</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Question 2: Where are you from?</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Question 3: What do you do?</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 </html>
