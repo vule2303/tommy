@@ -31,6 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 16px 22px 0 22px; 
+    
 }
 .nav_1 div .logo {
     color: #023856;
@@ -72,7 +73,7 @@ body {
     width: 70%;
     height: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 16px 22px 0 22px; 
     list-style: none;
 } 
@@ -94,4 +95,25 @@ body {
     left: -23px;
     top: 0;
 }
-
+/* BANNER */
+.banner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner .banner_1 {
+    width: 960px;
+    height: 272px;
+    background-color: #D9D9D9;
+}
+.banner .banner_2 {
+    width: 298px;
+    height: 126px;
+    background-color: #D9D9D9;
+}
+.banner .banner_3 {
+    width: 298px;
+    height: 126px;
+    margin-top: 20px;
+    background-color: #D9D9D9;
+}
