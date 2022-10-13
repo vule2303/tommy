@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Inter';
+    
 }
 /* HEADER*/
 
@@ -96,24 +97,93 @@ body {
     top: 0;
 }
 /* BANNER */
+
 .banner {
+
+    display: grid;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+    grid-template-areas: 'banner banner banner banner2'  ;
+    grid-gap: 10px;
+    
+
 }
 .banner .banner_1 {
-    width: 960px;
-    height: 272px;
+    height: 264px;
+    grid-area: banner;
     background-color: #D9D9D9;
 }
 .banner .banner_2 {
-    width: 298px;
+    grid-area: banner2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.banner .banner_2 .banner_2a {
+    width: 100%;
     height: 126px;
     background-color: #D9D9D9;
 }
-.banner .banner_3 {
-    width: 298px;
+.banner .banner_2 .banner_2b {
+    width: 100%;
     height: 126px;
-    margin-top: 20px;
     background-color: #D9D9D9;
+}
+/* CONTENT */
+.content_1 {
+    margin: 0 20px 0 20px;
+}
+  
+.title_content .title {
+   padding: 20px 0 20px 0;
+}
+.title_content .line {
+    
+    width: 100%;
+    height: 1px;
+    background-color: #023856;
+}
+  /* FASHION ITEMS*/
+.fashion_items .banner_item {
+    width: 100%;
+    height: 150px;
+    background-color: #D9D9D9;
+    
+}
+
+.fashion_items {
+    margin-top: 20px;
+    display: flex;
+    line-height: 25px;
+    justify-content: space-between;
+    text-align: center;
+}
+.item .price {
+    font-weight: 700;
+}
+.button {
+    font-weight: 700;
+    width: 120px;
+    height: 31px;
+    border: none;
+    border-radius: 20px;
+}
+    /* ELECTRONIC */
+.banner_sale {
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    background-color: #D9D9D9;
+}
+/* FOOTER */
+.ifg {grid-area: ifm;}
+.policy {grid-area: policy;}
+.map {grid-area: map;}
+.footer {
+    display: grid;
+    grid-template-areas: 'ifg policy map';
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    background-color: #023856;
 }
