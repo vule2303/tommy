@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới 
+3.Từ tổng quan đến chi tiết
+*/
+
+/*
+1.Vị trí
+2.Kích Thước
+3.Color
+4.Kiểu dáng
+*/
+html {
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+
+#nav > li:hover > a, 
+#nav .subnav li:hover {
+    color: #000!important;
+    background-color: #ccc!important; 
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#nav .subnav li {
+    display: block;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 21px;
+    line-height: 46px;
+}
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336!important;
+}
+
+
+#slider {
+    height: 1000px;
+    margin-top: 46.5px;
+}
+
+#content {
+
+}
+
+#footer {
+
+}

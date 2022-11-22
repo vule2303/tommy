@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7SGF/KJ4qCEpZjOKFtaDdz6kjBKfQkoRKzVwTVU+MrTXOFlRBkih3S58qaYAHxj4USN6aDTcX+9HC0s6xCye5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ad\\source\\repos\\Lab3\\Lab3\\Lab3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ad\\.nuget\\packages\\guna.ui2.winforms\\2.0.3.5\\guna.ui2.winforms.2.0.3.5.nupkg.sha512"
+  ],
+  "logs": []
+}
